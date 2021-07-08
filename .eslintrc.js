@@ -1,14 +1,15 @@
 module.exports = {
-  root: true,
+  root: false,// eslint-disable-line
+
   env: {
-    node: true,
+    node: false,// eslint-disable-line
+
   },
   extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
   parserOptions: {
-    parser: "babel-eslint",
+    parser: "babel-eslint",// eslint-disable-line
+
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
   },
 };
